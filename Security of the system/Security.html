@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Information Form</title>
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <h1>User Information Form</h1>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+        <label for="badgeNumber">Badge Number:</label>
+        <input type="text" id="badgeNumber" name="badgeNumber"><br><br>
+        <button type="button" id="submitBtn">Submit</button>
+      </form>
+      <div id="output"></div>
+    </div>
+
+    <script src="Process.js"></script>
+    <script>
+      // Call the processUserInput function when the document is loaded
+      document.addEventListener("DOMContentLoaded", processUserInput);
+    </script>
+
+  </body>
+</html>
